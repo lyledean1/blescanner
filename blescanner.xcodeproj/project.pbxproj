@@ -14,6 +14,13 @@
 		76F4F823292E917800354A4B /* blescannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F822292E917800354A4B /* blescannerTests.swift */; };
 		76F4F82D292E917800354A4B /* blescannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F82C292E917800354A4B /* blescannerUITests.swift */; };
 		76F4F82F292E917800354A4B /* blescannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F82E292E917800354A4B /* blescannerUITestsLaunchTests.swift */; };
+		76F4F83C292E938500354A4B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F83B292E938500354A4B /* ContentViewModel.swift */; };
+		76F4F83E292E93AE00354A4B /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F83D292E93AE00354A4B /* BluetoothManager.swift */; };
+		76F4F842292E970600354A4B /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F841292E970600354A4B /* DevicesView.swift */; };
+		76F4F844292E972A00354A4B /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F843292E972A00354A4B /* DevicesViewModel.swift */; };
+		76F4F84E292E987900354A4B /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F84D292E987900354A4B /* DeviceView.swift */; };
+		76F4F850292E988800354A4B /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F84F292E988800354A4B /* DeviceViewModel.swift */; };
+		76F4F852292EA07600354A4B /* WhoopState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4F851292EA07600354A4B /* WhoopState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		76F4F828292E917800354A4B /* blescannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blescannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F4F82C292E917800354A4B /* blescannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blescannerUITests.swift; sourceTree = "<group>"; };
 		76F4F82E292E917800354A4B /* blescannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blescannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76F4F83B292E938500354A4B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		76F4F83D292E93AE00354A4B /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		76F4F841292E970600354A4B /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		76F4F843292E972A00354A4B /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
+		76F4F84D292E987900354A4B /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		76F4F84F292E988800354A4B /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
+		76F4F851292EA07600354A4B /* WhoopState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoopState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +108,13 @@
 		76F4F810292E917700354A4B /* blescanner */ = {
 			isa = PBXGroup;
 			children = (
+				76F4F840292E96F300354A4B /* Views */,
+				76F4F83F292E95F100354A4B /* Models */,
 				76F4F811292E917700354A4B /* blescannerApp.swift */,
 				76F4F813292E917700354A4B /* ContentView.swift */,
 				76F4F815292E917800354A4B /* Assets.xcassets */,
 				76F4F817292E917800354A4B /* Preview Content */,
+				76F4F83B292E938500354A4B /* ContentViewModel.swift */,
 			);
 			path = blescanner;
 			sourceTree = "<group>";
@@ -125,6 +142,42 @@
 				76F4F82E292E917800354A4B /* blescannerUITestsLaunchTests.swift */,
 			);
 			path = blescannerUITests;
+			sourceTree = "<group>";
+		};
+		76F4F83F292E95F100354A4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76F4F83D292E93AE00354A4B /* BluetoothManager.swift */,
+				76F4F851292EA07600354A4B /* WhoopState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76F4F840292E96F300354A4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76F4F846292E983300354A4B /* Device */,
+				76F4F845292E981F00354A4B /* Devices */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76F4F845292E981F00354A4B /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				76F4F841292E970600354A4B /* DevicesView.swift */,
+				76F4F843292E972A00354A4B /* DevicesViewModel.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		76F4F846292E983300354A4B /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				76F4F84D292E987900354A4B /* DeviceView.swift */,
+				76F4F84F292E988800354A4B /* DeviceViewModel.swift */,
+			);
+			path = Device;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F4F814292E917700354A4B /* ContentView.swift in Sources */,
+				76F4F852292EA07600354A4B /* WhoopState.swift in Sources */,
+				76F4F842292E970600354A4B /* DevicesView.swift in Sources */,
 				76F4F812292E917700354A4B /* blescannerApp.swift in Sources */,
+				76F4F84E292E987900354A4B /* DeviceView.swift in Sources */,
+				76F4F850292E988800354A4B /* DeviceViewModel.swift in Sources */,
+				76F4F83E292E93AE00354A4B /* BluetoothManager.swift in Sources */,
+				76F4F844292E972A00354A4B /* DevicesViewModel.swift in Sources */,
+				76F4F83C292E938500354A4B /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +480,7 @@
 				DEVELOPMENT_TEAM = JXN7XV2RJC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Required to connect to bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +510,7 @@
 				DEVELOPMENT_TEAM = JXN7XV2RJC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Required to connect to bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
