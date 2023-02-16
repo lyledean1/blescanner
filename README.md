@@ -6,7 +6,7 @@ Uses:
 - Core Bluetooth for BLE connection
 - Combine for state management 
 
-Aim was to reverse engineer a whoop band (https://www.whoop.com/)[https://www.whoop.com/], then build a SwiftUI that updated on each new reading of the heart rate from the band.
+Aim was to reverse engineer a whoop band https://www.whoop.com/, then build a SwiftUI that updated on each new reading of the heart rate from the band.
 
 # Overview
 
