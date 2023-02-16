@@ -10,7 +10,7 @@ Aim was to reverse engineer a whoop band https://www.whoop.com/, then build a Sw
 
 ## Overview
 
-VerysSimple UI that updates based off heart rate from the Whoop device
+Very simple UI that updates based off heart rate from the Whoop device
 
 https://user-images.githubusercontent.com/20296911/219461364-f9e5e814-cf19-4c43-87a4-c1408fa3a4e7.mov
 
