@@ -36,7 +36,6 @@ final class DevicesViewModel: ObservableObject {
         manager.peripheralSubject
             .filter { [weak self] in self?.peripherals.contains($0) == false }
             .sink { [weak self] in
-                print($0)
                 self?.peripherals.append($0)
             }
             .store(in: &cancellables)

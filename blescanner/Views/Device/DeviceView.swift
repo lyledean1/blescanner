@@ -43,10 +43,26 @@ struct DeviceView: View {
     private func content() -> some View {
         if viewModel.isReady {
             VStack {
-                Text("Heart Rate")
-                    .font(.system(size: 36))
-                Text(String(viewModel.state.heartRate))
-                    .font(.system(size: 36))
+                ZStack{
+                    Rectangle()
+                        .frame(width: 100, height: 100, alignment: .center)
+                        .foregroundColor(.red)
+                        .cornerRadius(5)
+                    
+                    Circle()
+                        .frame(width: 100, height: 100, alignment: .center)
+                        .foregroundColor(.red)
+                        .padding(.top, -100)
+                    
+                    Circle()
+                        .frame(width: 100, height: 100, alignment: .center)
+                        .foregroundColor(.red)
+                        .padding(.trailing, -100)
+                }.rotationEffect(Angle(degrees: -45))
+                VStack(alignment: .leading, spacing: 16) {
+                    Text(String(viewModel.state.heartRate))
+                        .font(.system(size: 36))
+                }
             }
         }
         else {
